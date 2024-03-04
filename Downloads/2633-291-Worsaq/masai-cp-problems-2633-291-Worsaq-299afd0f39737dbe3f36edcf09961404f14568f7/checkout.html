@@ -1,17 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Checkout</title>
-  </head>
-  <body>
-    <div id="checkout-container">
-      <h1>Checkout</h1>
-      <!-- - In checkout.html page name, number and address should have Ids as “name”, “number” and “address” respectively. -->
-      <!-- - Checkout page will have a Place Order button with Id :- "place-order" -->
-      <h4 id ="order-message"></h4>
-    </div>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout</title>
+</head>
+
+<body>
+
+  <h1>Checkout</h1>
+  <div id="checkout-container">
+
+
+    <div class="name">Name:</div>
+    <input type="text" id="name" name="name"><br><br>
+
+    <div class="number">Number:</div>
+    <input type="text" id="number" name="number"><br><br>
+
+    <div class="address">Address:</div>
+    <textarea id="address" name="address"></textarea><br><br>
+
+    <button type="button" id="place-order">Place Order</button>
+   
+
+  
+   
+
+
+
+    <!-- - In checkout.html page name, number and address should have Ids as “name”, “number” and “address” respectively. -->
+    <!-- - Checkout page will have a Place Order button with Id :- "place-order" -->
+    
+
+    <script>
+      const placeOrderButton = document.getElementById('place-order');
+      placeOrderButton.addEventListener('click', () => {
+        // Add logic here to handle placing the order
+        const name = document.getElementById('name').value;
+        const number = document.getElementById('number').value;
+        const address = document.getElementById('address').value;
+
+        // Perform actions with the name, number, and address values
+        // For example, sending this information to a server for processing
+
+        console.log('Order placed with:');
+        console.log('Name:', name);
+        console.log('Number:', number);
+        console.log('Address:', address);
+
+        // You can further process this data (send it to a backend, store it locally, etc.)
+      });
+
+
+      function placeOrder() {
+        ed
+        alert('Your order has been placed!');
+      }
+      document.getElementById('place-order').addEventListener('click', placeOrder);
+
+
+
+
+
+      
+    </script>
+
+
+</body>
+
 </html>

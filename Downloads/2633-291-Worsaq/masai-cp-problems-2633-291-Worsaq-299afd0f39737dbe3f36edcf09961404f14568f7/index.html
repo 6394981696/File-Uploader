@@ -4,22 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css">
     <title>Home</title>
   </head>
   <body>
-    <div id="navbar">
-      <div>login</div>
-      <div>Sign-Up</div>
-      <div>Items</div>
+   
       <!-- - Navbar should have cart link with Id :- “go_to_cart” -->
       <!-- - Count div Id :- “item_count” -->
       <!-- item_count should contain only number do not add any extra text -->
+
+      <nav>
+        <div>
+          <div><a href="index.html">Home</a></div>
+          <div><a href="checkout.html">Checkout</a></div>
+          <div><a href="cart.html" id="go_to_cart">Cart<span id="item_count">0</span></a></div>
+        </div>
+      </nav>
+    
+      
+
     </div>
 
-    <div>
+    
+
+      <div id="items">
       <!-- - Append the items inside div with Id : “items”
       - Item card will have class : "item"
       - Add to cart button with class :- “add_to_cart” -->
     </div>
   </body>
+  <script src="index.js"></script>
 </html>

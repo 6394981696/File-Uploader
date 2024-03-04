@@ -1,19 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cart</title>
-  </head>
-  <body>
-    <h2>
-      <!-- Cart total price in cart.html H2 tag with Id :- “cart_total” -->
-      <!-- Mention only price, don't add any extra text, only number should be present -->
-    </h2>
 
-    <!-- - Append the items in local storage to a div with Id :- “cart”
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="cart.css">
+  <title>Cart</title>
+</head>
+
+<body>
+
+  <div id="root"></div>
+
+
+    <nav>
+      <div>
+        <div><a href="index.html">Home</a></div>
+        <div><a href="checkout.html">Checkout</a></div>
+        <div><a href="cart.html" id="go_to_cart">Cart<span id="item_count">0</span></a></div>
+      </div>
+    </nav>
+
+    <h2 id="cart_total">[Insert Cart Total Price Here]</h2>
+    <h2 id="cart_total">100</h2>
+
+
+    <!-- Cart total price in cart.html H2 tag with Id :- “cart_total” -->
+    <!-- Mention only price, don't add any extra text, only number should be present -->
+
+
+
+     <!-- <div class="images">
+      <img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/91f6Em0q+eL.jpg" alt="" srcset="">
+    </div>  -->
+  
+  <!-- - Append the items in local storage to a div with Id :- “cart”
          - Each item should have remove button with class : “remove”
          - Checkout Button Id :- “checkout” -->
-  </body>
+
+         <div id="cart">
+          <img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/91f6Em0q+eL.jpg" alt="" srcset="">
+          <!-- Items from local storage will be appended here -->
+        </div>
+        <button id="checkout">Checkout</button>
+        
+</body>
+
+
+
+</html>
+<script src="cart.js"></script>
+
 </html>
